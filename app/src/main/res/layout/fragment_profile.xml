@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileFragment"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <ImageButton
+        android:id="@+id/back_to_department"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/back_button"
+        android:layout_width="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_profile_fragment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FF000000"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardBackgroundColor="#F6F6F6"
+            card_view:cardElevation="5dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/profile_name_profile_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ізтілеуов Мақсат"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingStart="18dp"
+                    android:paddingTop="4dp"
+                    />
+                <TextView
+                    android:id="@+id/profile_age_profile_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Жасы 28"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="4dp"
+                    />
+                <TextView
+                    android:id="@+id/profile_experience_profile_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Стаж 1 жыл"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сату бөлімі"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardBackgroundColor="#F6F6F6"
+            card_view:cardElevation="5dp"
+            android:layout_marginBottom="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Берілді"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1200 балл"
+                    android:textSize="16sp"
+                    android:textColor="#4CD9BA"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardBackgroundColor="#F6F6F6"
+            card_view:cardElevation="5dp"
+            android:layout_marginBottom="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ұсталды"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="400 балл"
+                    android:textSize="16sp"
+                    android:textColor="#FF3B30"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardBackgroundColor="#F6F6F6"
+            card_view:cardElevation="5dp"
+            android:layout_marginBottom="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Қалғаны"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1100 балл"
+                    android:textSize="16sp"
+                    android:textColor="#FFE57B"
+                    android:gravity="right"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        >
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Жетекшілер саны"
+            android:textColor="#9C9C9C"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/numberOfLead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="300"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/arrow_up"
+                android:layout_marginRight="6dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7%"
+                android:textColor="#4AAF05"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

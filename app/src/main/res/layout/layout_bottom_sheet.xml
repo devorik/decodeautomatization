@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_bg"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дүйсенбі шығыны"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:textColor="@color/black"
+        android:paddingBottom="20dp"
+        />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="шығынды енгізіңіз.."
+       android:textColorHint="@color/defaultColor"
+       android:padding="10dp"
+       android:textColor="@color/black"
+       android:textSize="16sp"
+       android:ems="10"
+       android:height="60dp"
+        android:background="@drawable/custom_input"
+       />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button_dialog_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ЕНГІЗУ"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
+        android:elevation="10dp"
+        android:layout_gravity="right"
+        />
+
+
+
+</LinearLayout>
